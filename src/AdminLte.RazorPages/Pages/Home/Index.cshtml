@@ -1,0 +1,12 @@
+﻿@page
+@model AdminLte.RazorPages.Pages.Home.IndexModel
+@{
+    ViewData["Title"] = "Starter";
+}
+
+<div class="content-header">
+    @await Html.PartialAsync("_Index.Header.cshtml")
+</div>
+<div class="content">
+    @await Html.PartialAsync("_Index.Content.cshtml")
+</div>

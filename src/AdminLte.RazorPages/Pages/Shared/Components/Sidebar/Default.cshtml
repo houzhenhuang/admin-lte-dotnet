@@ -1,0 +1,11 @@
+﻿@using AdminLte.RazorPages.Pages.Shared.Components.SidebarBrand
+@using AdminLte.RazorPages.Pages.Shared.Components.SidebarMenu
+@using AdminLte.RazorPages.Pages.Shared.Components.SidebarUserPanel
+
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    @(await Component.InvokeAsync<SidebarBrandViewComponent>())
+    <div class="sidebar">
+        @(await Component.InvokeAsync<SidebarUserPanelViewComponent>())
+        @(await Component.InvokeAsync<SidebarMenuViewComponent>())
+    </div>
+</aside>
